@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 100px;
+}
+.logo{
+    padding: 23px;
+    max-height: 100%;
+    width: auto;
+    
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    padding: 23px; 
+    margin: auto;
+}
+.nav-list li{
+    list-style: none;
+    padding: 0 9px;
+}
+
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+ 
+}
+.nav-list li a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 12px;
+    padding: 4px;
+}
+.rightNav{
+    color: white;
+    width: 50%;
+    text-align: right;
+    padding: 23px;
+}
+.btn{
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 90px;
+    height: 29px;
+    background: none;
+    color: white;
+    margin-left: 2px;
+    
+}
+.btn:hover{
+    background-color: rgb(131, 126, 126);
+}
+#search{
+    width: 183px;
+    border-radius: 15px;
+    height: 27px;
+    padding: 2px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width:33px;
+    background: white;
+    height: 4px;
+    margin: 3px;
+}
+.firstSection{
+    height: 100vh;
+}
+.boxmain{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 70%;
+    margin: auto;
+    padding-top: 100px;
+}
+.background{
+    background-image: url(https://media.istockphoto.com/photos/beautiful-abstract-black-feathers-on-white-background-and-soft-white-picture-id1290255237?b=1&k=20&m=1290255237&s=170667a&w=0&h=Kf7M0ky9xlly3t7PSFAdYyRD8A2V9H_gfYEwwOR51Pg=);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.firstHalf{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.secondHalf img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+.textBig{
+     font-size: 40px;
+     text-align: center;
+}
+.textSmall{
+      font-size: 16px;
+      padding: 10px;
+}
+.section{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+}
+.left{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    margin-left: 9px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    background: rgb(243, 239, 239);
+    height: 290px;
+    padding-top: 12px;
+}
+.hello{
+    text-align: center;
+    margin: auto;
+}
+.form{
+   
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* width: 200px; */
+}
+.form input{
+    height: 25px;
+    width: 300px;
+    text-align: center;
+    padding: 9px;
+    margin: 9px;
+    border-radius: 6px;
+}
+.footer{
+    color: black;
+    width:330px ;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 25px;
+    text-align: center;
+}
+@media (max-width:674px){
+    .nav-list{
+     flex-direction: column;
+     text-align: center;
+    
+    }
+    .navbar{
+        height: 500px;
+        flex-direction: column;
+        transition: all 1s ease-out;  
+    }
+    .nav-list li{
+        padding: 15px 9px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search
+    {
+      width: 100%;
+      margin: auto;
+
+    }
+    .burger{
+        padding-top: 9px;
+        display: block;
+    }
+    .hide{
+        height: 65px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .boxmain{
+        flex-direction: column-reverse;
+        max-width: 100%;
+
+    }
+    .section{
+        flex-direction: column-reverse;
+        
+    }
+   
+}
